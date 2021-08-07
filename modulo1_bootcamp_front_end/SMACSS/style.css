@@ -1,0 +1,60 @@
+/*
+This methodology is a system of categorization given a set of rules
+ */
+
+/* Base */
+button {
+    padding: 5px;
+}
+
+p {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+body {
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* Layout */
+.l-header {
+    text-align: center;
+}
+
+/* Módulo */
+.card {
+    max-width: 350px;
+    padding: 10px;
+}
+
+.image {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.description {
+    text-align: center;
+}
+
+.buttons-cnt {
+    margin: 5px 0 5px 20px;
+}
+
+/* Theme */
+.theme-light{
+    color: slategray;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid navy;
+}
+
+.theme-success{
+    background-color: greenyellow;
+}
+
+.theme-fail{
+    background-color: lightcoral;
+}

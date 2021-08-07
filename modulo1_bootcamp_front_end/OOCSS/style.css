@@ -1,0 +1,53 @@
+/*
+This methodology uses object-oriented concepts
+to provide a structure to the CSS, based on the
+object's appearance rather then its content or
+functionality.
+ */
+
+/* ----------------- SKIN (Visual aspects of the element) ----------------------*/
+.theme-light{
+    color: slategray;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid navy;
+}
+
+.theme-success{
+    background-color: greenyellow;
+}
+
+.theme-fail{
+    background-color: lightcoral;
+}
+
+/* ----------------- STRUCTURE (size & element's position) ----------------------*/
+body{
+    width: 350px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+}
+
+.card{
+    max-width: 350px;
+    padding: 10px;
+}
+
+.description{
+    text-align: center;
+}
+
+.image{
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.buttons-cnt{
+    margin: 5px 0 5px 20px;
+}
+
+button{
+    padding: 5px;
+}

@@ -1,0 +1,36 @@
+
+/* Block */
+.card {
+    max-width: 350px;
+    padding: 10px;
+    color: slategray;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid navy;
+}
+
+/* Element */
+.card_image {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.card_description {
+    text-align: center;
+}
+
+.card_buttons-cnt {
+    margin: 5px 0 5px 20px;
+}
+
+.card_button {
+    padding: 5px;
+}
+
+/* Modifier */
+.card_button--success {
+    background-color: greenyellow;
+}
+
+.card_button--fail {
+    background-color: lightcoral;
+}
