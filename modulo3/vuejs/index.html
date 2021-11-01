@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="hello-world">
+    <fieldset>
+        <legend>template</legend>
+        <div v-html="htmlContent"></div>
+        <p>Primeiro Nome: {{firstName}}</p>
+        <p>Sobrenome: {{lastName}}</p>
+        <p>Idade: {{age}} anos</p>
+    </fieldset>
+    <fieldset>
+        <legend>methos</legend>
+        <button v-on:click="incrementAge()">Incrementar idade</button>
+        <button @click="decrementAge()">Decrementar idade</button>
+    </fieldset>
+</div>
+<script src="https://unpkg.com/vue@3.0.4"></script>
+    <script>
+    const app = {
+        data() {
+            return {
+                firstName: 'John',
+                lastName: 'Snow',
+                age: 30,
+                htmlContent: `
+                <p>Hello World Vue.js!</p>
+                `
+            }
+        },
+        methods: {
+            incrementAge() {
+                // console.log(this.age)
+                this.age++;
+            },
+            decrementAge() {
+                // console.log(this.age)
+                this.age--;
+            }
+        },
+        computed: {
+        }
+    };
+    const vm = Vue.createApp(app).mount("#hello-world");
+    </script>
+</body>
+</html>

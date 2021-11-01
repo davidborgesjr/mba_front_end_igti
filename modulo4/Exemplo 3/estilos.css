@@ -1,0 +1,14 @@
+:host {
+    display: inline-flex;
+}
+
+button {
+    display: block;
+    margin-left: 1em;
+}
+
+span {
+    display: inline-flex;
+    min-width: 3em;
+    font-size: 40px;
+}

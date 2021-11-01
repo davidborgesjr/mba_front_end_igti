@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class HelloWorldComponent extends HTMLElement{
+            constructor(){
+                super();
+
+                this.attachShadow({mode: 'open'});
+                const tpl = document.getElementById("template-wc");
+                this.shadowRoot.append(tpl.content.cloneNode(true));
+            }
+        }
+
+        customElements.define('hello-world', HelloWorldComponent);
+    </script>
+</head>
+<body>
+    <svg>
+        
+        <g transform="rotate(90)">
+            <circle cx="0" cy="0" r="45" fill="black" stroke="none" />
+        </g>
+    </svg>
+    
+    <template id="template-wc">
+        <style>
+            :host{
+                display: block;
+                background-color: #666;
+                color: white;
+                padding: 1em;
+                margin: 1em;
+            }
+        </style>
+        <h2>Este é o título</h2>
+        <p>Este é um conteúdo definidoo dentro do template</p>
+    </template>
+    <h1>HTML Template</h1>
+    <hello-world></hello-world>
+    <script>
+        /*
+        const tpl = document.getElementById("template-wc");
+        document.body.append(tpl.content.cloneNode(true))
+        */
+    </script>
+   
+</body>
+</html>

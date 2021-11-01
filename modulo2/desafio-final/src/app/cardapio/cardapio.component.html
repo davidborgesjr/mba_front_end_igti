@@ -1,0 +1,8 @@
+<div *ngFor="let category of categories">
+  <h2>{{category}}</h2>
+  <div *ngFor="let item of getItemsByCategory(category)">
+    <p>
+      {{item.descricao}} = {{item.preco}}
+    </p>
+  </div>
+</div>
